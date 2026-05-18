@@ -1,0 +1,8 @@
+#Codex configs
+.codex/
+
+#environment variables
+.env
+
+#memories and local protocols
+memories/
