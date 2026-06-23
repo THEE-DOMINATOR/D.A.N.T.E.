@@ -28,7 +28,7 @@ elif platform.system() == "Darwin":
     webview.start()
     # sorry mac users, you dont get an icon! 
     # no seriously im on windows and cant get to a mac to generate an icns file, but i guess you can make it yourself from assets/triangle_icon.png
-    # if you do, PLEASE make a pr
+    # if you do, PLEASE make a pr :)
 
 def start():
     pass
