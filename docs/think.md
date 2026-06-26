@@ -3,12 +3,12 @@ This file is responsible for **all** of D.A.N.T.E.'s thinking. It provides an ab
 
 You can make your own model schema like so: 
 ```python
-    elif THINKING_MODEL_MODE == your model:
-        # any initial setup needed goes here
-        # this is stuff like API keys and imports
-        def getResponse(prompt):
-            # logic to get response using prompt
-            yield response 
+elif THINKING_MODEL_MODE == your model:
+    # any initial setup needed goes here
+    # this is stuff like API keys and imports
+    def getResponse(prompt):
+        # logic to get response using prompt
+        yield response 
 ```
 > [!WARNING]
 > Failing to enclose your schema in an elif statement or include try...except protections can cause D.A.N.T.E. to crash and burn. Be careful. 
