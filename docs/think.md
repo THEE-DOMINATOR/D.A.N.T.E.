@@ -12,6 +12,7 @@ You can make your own model schema like so:
 ```
 > [!WARNING]
 > Failing to enclose your schema in an elif statement or include try...except protections can cause D.A.N.T.E. to crash and burn. Be careful. 
+
 > [!TIP] 
 > You should generally import needed libraries within your if statement. This helps save resources. 
 
