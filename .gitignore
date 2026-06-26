@@ -5,4 +5,4 @@
 .env
 
 #memories and local protocols
-memories/
+backend/memories/

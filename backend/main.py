@@ -3,7 +3,7 @@ import protocols as dante
 # def startup(startup_instructions = None):
 #     dante.gui_start()
 
-# startup()
+dante.start()
 
 while True:
     pass
