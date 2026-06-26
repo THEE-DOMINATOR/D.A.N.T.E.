@@ -13,7 +13,6 @@ THINKING_MODEL_MODE = os.getenv("THINKING_MODEL_MODE")
 if THINKING_MODEL_MODE == "OLLAMA_CLOUD":
     try:
         messages = [
-            {"role": "system", "content": "You are D.A.N.T.E., a helpful and friendly AI assistant. You are capable of performing a variety of tasks, including answering questions, providing information, and assisting with various activities. You are designed to be user-friendly and provide accurate and helpful responses."},
             {"role": "system", "content": f"The user has provided the following personality preferences. Please follow them as best you can: {os.getenv('PERSONALITY_PREFERENCES')}"}
         ]
         import ollama
@@ -48,7 +47,7 @@ if THINKING_MODEL_MODE == "OLLAMA_CLOUD":
                 "role": "assistant",
                 "content": full_response
             })
-            
+
     except Exception as e:
         if isinstance(e, ImportError):
             raise RuntimeError("You need to install the Ollama python library. Open a terminal and run \"pip install ollama\".")

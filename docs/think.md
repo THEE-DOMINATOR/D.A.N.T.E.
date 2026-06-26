@@ -6,10 +6,14 @@ You can make your own model schema like so:
 elif THINKING_MODEL_MODE == your model:
     # any initial setup needed goes here
     # this is stuff like API keys and imports
+    # if your model supports personalization, call os.getenv('PERSONALITY_PREFERENCES') here.
     def getResponse(prompt):
         # logic to get response using prompt
-        yield response 
+        yield chunks 
 ```
+> [!WARNING]
+> Make sure to have your model stream and yield chunks. Failing to do this can break speaking or delay it.
+
 > [!WARNING]
 > Failing to enclose your schema in an elif statement or include try...except protections can cause D.A.N.T.E. to crash and burn. Be careful. 
 
