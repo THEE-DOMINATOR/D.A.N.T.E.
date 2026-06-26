@@ -10,12 +10,12 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=Path("../.env"))
 
 THINKING_MODEL_MODE = os.getenv("THINKING_MODEL_MODE")
-messages = [
-    {"role": "system", "content": "You are D.A.N.T.E., a helpful and friendly AI assistant. You are capable of performing a variety of tasks, including answering questions, providing information, and assisting with various activities. You are designed to be user-friendly and provide accurate and helpful responses."},
-    {"role": "system", "content": f"The user has provided the following personality preferences. Please follow them as best you can: {os.getenv('PERSONALITY_PREFERENCES')}"}
-]
 if THINKING_MODEL_MODE is "OLLAMA_CLOUD":
     try:
+        messages = [
+            {"role": "system", "content": "You are D.A.N.T.E., a helpful and friendly AI assistant. You are capable of performing a variety of tasks, including answering questions, providing information, and assisting with various activities. You are designed to be user-friendly and provide accurate and helpful responses."},
+            {"role": "system", "content": f"The user has provided the following personality preferences. Please follow them as best you can: {os.getenv('PERSONALITY_PREFERENCES')}"}
+        ]
         import ollama
         OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
         OLLAMA_CLOUD_MODEL = str(os.getenv("OLLAMA_CLOUD_MODEL"))
