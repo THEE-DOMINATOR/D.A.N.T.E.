@@ -59,5 +59,5 @@ else:
         yield "Something went wrong with your model configuration. A model was either not specified or is not yet implemented. Please check your .env file and try again."
         print("Something went wrong with your model configuration. A model was either not specified or is not yet implemented. Please check your .env file and try again.")
 
-for chunk in getResponse("hi"):
+for chunk in getResponse("testing for signs of life (debugging purposes)"):
     print(chunk, end="", flush=True)
