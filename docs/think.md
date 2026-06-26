@@ -22,3 +22,8 @@ elif THINKING_MODEL_MODE == your model:
 
 ## Contributing
 If you have thoroughly tested your schema, feel free to submit it as a PR on GitHub! 
+Submissions that don't follow the follwing criteria **will** be rejected:
+- All new library imports are nestled in the if statement
+- No other changes were made to the file (other than bug fixes)
+- You've updated .env.example appropriately to add necessary setup variables
+- User defined parameters (model, API key, etc) are not hardcoded
